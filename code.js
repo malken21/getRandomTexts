@@ -3,7 +3,7 @@ function doGet(e) {
 
     // wikipedia からランダムな記事を取得
     const randomList = get(
-        `${URL}?action=query&format=json&list=random&rnlimit=${Limit}`
+        `${URL}?action=query&format=json&list=random&rnlimit=${Limit}&rnnamespace=0`
     );
 
     // レスポンスの配列を作成する
